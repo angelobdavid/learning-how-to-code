@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Angelo's Blog</title>
   <script src="/assets/jquery.js"></script>
 </head>
 
@@ -9,12 +9,21 @@
 <h1>  Angelo's Blog</h1>
 <p> This is where I blog about random stuff such as, my hobbies, sports, interests and etc...</p>
   
+<div class=list>
  <ul>
   <li>Coding</li>
   <li>Sports</li>
   <li>Blog</li>
 </ul>
+  </div>
   
+  <Script>
+    $("p").list(function(){
+  $(this).css("background-color", "yellow");
+  }, function(){
+  $(this).css("background-color", "pink");
+});
+   </script>
 </body>
 
 </html>
